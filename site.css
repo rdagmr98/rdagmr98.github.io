@@ -26,10 +26,26 @@ a{color:var(--cyan)}
 .card:hover{border-color:rgba(198,240,0,.35)}
 .card h2,.card h3{font-size:1.05rem;margin:0 0 .3rem;color:var(--ink)}
 .card p{color:var(--dim);font-size:.92rem;margin:0;line-height:1.5}
+.card-media{padding:0;overflow:hidden}
+.card-media img{display:block;width:100%;height:160px;object-fit:cover;background:#0a0c08}
+.card-media .card-body{padding:1rem 1.1rem}
 .tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--volt);margin-bottom:.35rem;font-family:system-ui,sans-serif}
 .section-label{font-family:system-ui,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin:2.2rem 0 .8rem}
 footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-family:system-ui,sans-serif;font-size:.85rem;color:var(--dim)}
 footer a{color:var(--volt);text-decoration:none;margin-right:.9rem}
 footer a:hover{text-decoration:underline}
 .note{background:var(--panel);border-left:3px solid var(--volt);padding:.9rem 1rem;margin:1.3rem 0;font-size:.98rem}
-@media(max-width:560px){.nav{gap:.55rem .9rem}}
+.media{margin:1.4rem 0 1.6rem}
+.media video,.media img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:#0a0c08}
+.media figcaption{font-family:system-ui,sans-serif;font-size:.82rem;color:var(--dim);margin-top:.55rem}
+.shot-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;margin:1.2rem 0 1.6rem}
+.shot-row img{width:100%;height:140px;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:#0a0c08}
+.ex-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin:1rem 0 1.5rem}
+.ex-row img{width:100%;aspect-ratio:1;object-fit:contain;background:var(--panel);border-radius:8px;border:1px solid var(--line);padding:.35rem}
+@media(max-width:560px){
+  .nav{gap:.55rem .9rem}
+  .shot-row{grid-template-columns:1fr}
+  .shot-row img{height:180px}
+  .ex-row{grid-template-columns:repeat(2,1fr)}
+  .card-media img{height:140px}
+}
