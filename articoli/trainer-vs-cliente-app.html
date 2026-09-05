@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Perché separare app trainer e app cliente — rdagmr98</title>
-<meta name="description" content="Perché GymApp e Logbook sono due prodotti: ruoli diversi, dati diversi e meno confusione tra personal trainer e atleta.">
+<title>GymApp, Logbook e Coach: tre ruoli diversi — rdagmr98</title>
+<meta name="description" content="GymApp per chiunque si alleni; Logbook per l’atleta; GymCoachPro per il personal trainer. Perché non mescolare i ruoli.">
 <meta name="google-adsense-account" content="ca-pub-2556899149200560">
 <link rel="canonical" href="https://rdagmr98.github.io/articoli/trainer-vs-cliente-app.html">
 <link rel="stylesheet" href="../site.css">
@@ -22,29 +22,33 @@
 </nav>
 
 <article class="prose">
-  <h1>Perché separare l’app del trainer da quella del cliente</h1>
+  <h1>GymApp per tutti, Logbook e Coach per il duo PT/atleta</h1>
   <p class="meta">5 settembre 2026 · Gianmarco · Fitness</p>
-  <p class="lead">Un’unica app “per PT e atleti” sembra comoda. In pratica mescola compiti, schermate e rischi. Ecco perché ho tenuto prodotti distinti.</p>
+  <p class="lead">Tre prodotti, tre lavori. Mescolarli in un’unica app “per tutti i ruoli” crea confusione. Ecco come li tengo separati.</p>
 
-  <h2>Due lavori diversi nello stesso spazio</h2>
-  <p>Il trainer progetta: sceglie esercizi, volume, progressioni, alternative, note. L’atleta esegue: apre la sessione, fa le serie, marca i carichi, usa il timer. Se metti entrambi i flussi nella stessa home, uno dei due diventa un sottomenu scomodo — di solito quello dell’atleta, che è chi apre l’app più spesso.</p>
-  <p>Separare i prodotti forza una domanda sana: <em>questa schermata serve a chi allena o a chi si allena?</em> Se non sai rispondere, non va in quella build.</p>
+  <h2>GymApp: per chi si allena</h2>
+  <p><a href="https://rdagmr98.github.io/GymApp/">GymApp</a> è pensata per chiunque vada in palestra: crei la scheda, la esegui, logghi serie e carichi, usi il timer. Non serve un personal trainer nell’equazione. È l’app “faccio da me” — o comunque gestisco il mio allenamento senza entrare in un flusso coaching.</p>
 
-  <h2>Dati e responsabilità</h2>
-  <p>Il PT non deve “vivere” dentro il diario grezzo di ogni serie come se fosse il proprietario del telefono del cliente. Il cliente non deve poter rompere la libreria esercizi o le schede di altri atleti. Ruoli chiari riducono errori e richieste di supporto del tipo “ho toccato una cosa e mi è sparita la scheda”.</p>
-  <div class="note">In GymCoachPro / GymApp il centro è la gestione; in Logbook il centro è l’esecuzione. Stesso ecosistema, interfacce diverse.</div>
+  <h2>Logbook: per l’atleta seguito</h2>
+  <p><a href="https://rdagmr98.github.io/gymapplogbook/">Gym Logbook</a> è il diario dell’atleta che riceve la scheda dal coach. Apre la sessione, esegue, registra, timer. Niente menu da gestionale: sotto fatica servono pochi tap, non la panoramica clienti.</p>
 
-  <h2>UX: meno modi di sbagliare</h2>
-  <p>Un atleta sotto fatica non vuole menu da gestionale. Pulsanti grandi, sessione del giorno, timer, storico recente. Il PT vuole panoramica clienti, modifiche rapide, template. Compromettere entrambi per “un’app sola” produce mediocrità doppia.</p>
+  <h2>GymCoachPro: per il personal trainer</h2>
+  <p><a href="https://rdagmr98.github.io/gymapp-coach/">GymCoachPro</a> è la dashboard del PT: clienti, schede, monitoraggio. Qui si progetta e si corregge; non si “vive” dentro ogni serie come se fosse il telefono dell’atleta.</p>
+  <div class="note">GymApp = allenamento personale. Logbook + Coach = relazione coach↔atleta. Stesso mondo palestra, prodotti diversi.</div>
 
-  <h2>Aggiornamenti e priorità</h2>
-  <p>Con codebase o almeno superfici separate puoi rilasciare un fix al timer senza toccare la dashboard PT, e viceversa. Le priorità di prodotto restano leggibili: questa settimana migliora il log; la prossima, l’assegnazione schede.</p>
+  <h2>Perché non un’unica app</h2>
+  <p>Se metti costruzione schede multi-cliente e esecuzione in palestra nella stessa home, uno dei due flussi diventa un sottomenu scomodo. L’atleta vuole la sessione del giorno; il coach vuole la lista clienti. Compromettere entrambi produce mediocrità doppia.</p>
+  <p>Ruoli chiari riducono anche gli errori: l’atleta non rompe la libreria del PT; il PT non tratta il diario grezzo come se fosse il proprietario del telefono del cliente.</p>
 
-  <h2>Quando una sola app ha senso</h2>
-  <p>Ha senso per chi si allena da solo e costruisce le proprie schede: lì trainer e cliente coincidono. Non è il caso di uno studio PT con più clienti. Se il tuo modello è coaching, separa; se è diario personale, unifica.</p>
+  <h2>Quando usare cosa</h2>
+  <ul>
+    <li><strong>Ti alleni da solo / gestisci la tua scheda</strong> → GymApp</li>
+    <li><strong>Hai un coach e segui la sua scheda</strong> → Logbook</li>
+    <li><strong>Sei il PT e gestisci più atleti</strong> → GymCoachPro</li>
+  </ul>
 
-  <h2>Lezione pratica dal progetto</h2>
-  <p>Landing e download restano distinti (<a href="https://rdagmr98.github.io/gymappad/">gymappad</a>, web trainer, logbook) proprio per non confondere lo store e i QR. L’utente atterra sul pezzo giusto. La stessa logica vale dentro il prodotto: meno ambiguità, meno abbandono.</p>
+  <h2>Landing e download distinti</h2>
+  <p>Anche store e QR restano separati (<a href="https://rdagmr98.github.io/gymappad/">gymappad</a>, web GymApp, logbook, coach) così l’utente atterra sul pezzo giusto. Stessa logica del prodotto: meno ambiguità, meno abbandono.</p>
   <p>Approfondimento collegato: <a href="diario-allenamento-abitudini.html">cosa vale la pena registrare nel diario</a>.</p>
 </article>
 
