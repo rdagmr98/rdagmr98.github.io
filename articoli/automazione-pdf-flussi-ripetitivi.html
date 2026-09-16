@@ -3,21 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Automatizzare flussi PDF ripetitivi: quando conviene — rdagmr98</title>
+<title>Automatizzare flussi PDF ripetitivi — rdagmr98</title>
 <meta name="description" content="Criteri pratici per automatizzare unione, compressione e modifiche PDF ripetitive: frequenza, errori, stabilità e manutenzione.">
 <meta name="google-adsense-account" content="ca-pub-2556899149200560">
 <meta name="author" content="Gianmarco">
 <link rel="canonical" href="https://rdagmr98.github.io/articoli/automazione-pdf-flussi-ripetitivi.html">
 <link rel="stylesheet" href="../site.css">
-<script type="application/ld+json">{
-  "@context":"https://schema.org",
-  "@type":"Article",
-  "headline":'Automatizzare flussi PDF ripetitivi: quando conviene',
-  "description":'Criteri pratici per automatizzare unione, compressione e modifiche PDF ripetitive: frequenza, errori, stabilità e manutenzione.',
-  "author":{"@type":"Person","name":"Gianmarco"},
-  "dateModified":"2026-09-16",
-  "mainEntityOfPage":'https://rdagmr98.github.io/articoli/automazione-pdf-flussi-ripetitivi.html'
-}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":'Automatizzare flussi PDF ripetitivi: quando conviene davvero',"description":'Criteri pratici per automatizzare unione, compressione e modifiche PDF ripetitive: frequenza, errori, stabilità e manutenzione.',"author":{"@type":"Person","name":"Gianmarco"},"dateModified":"16 settembre 2026","mainEntityOfPage":'https://rdagmr98.github.io/articoli/automazione-pdf-flussi-ripetitivi.html'}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2556899149200560" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -25,7 +17,7 @@
 <nav class="nav" aria-label="Principale">
   <a class="brand" href="../index.html">rdagmr98</a>
   <a href="../index.html">Home</a>
-  <a href="../articoli/index.html">Articoli</a>
+  <a href="../index.html" aria-current="page">Articoli</a>
   <a href="../progetti.html">Progetti</a>
   <a href="../chi-sono.html">Chi sono</a>
   <a href="../contatti.html">Contatti</a>
@@ -42,32 +34,44 @@
     <li><strong>Stabilità:</strong> i passaggi sono gli stessi o ogni volta è un caso speciale?</li>
     <li><strong>Manutenzione:</strong> se cambia un dettaglio, saprai aggiornare lo strumento in 15 minuti?</li>
   </ol>
-  <p>Tre sì su quattro → automatizza. Un solo sì → lascia il manuale o fai un checklist, non un progetto software.</p>
+  <p>Tre sì su quattro → automatizza. Un solo sì → lascia il manuale o fai una checklist, non un progetto software.</p>
 
-  <h2>Esempi che pagano</h2>
+  <h2>Flussi che di solito pagano</h2>
   <ul>
-    <li>Comprimere sotto una soglia MB prima di una piattaforma che rifiuta allegati</li>
-    <li>Unire sempre la stessa sequenza di moduli in un unico file</li>
-    <li>Applicare la stessa filigrana / testo fisso a un lotto</li>
+    <li>Comprimere sotto una soglia MB prima di una piattaforma che rifiuta allegati grandi</li>
+    <li>Unire sempre la stessa sequenza di moduli (copertina + corpo + allegato) in un unico file</li>
+    <li>Applicare la stessa filigrana o testo fisso a un lotto omogeneo</li>
+    <li>Ruotare/ordinare scansioni che arrivano sempre nello stesso modo sbagliato</li>
+    <li>Esportare un pacchetto “pronto invio” con naming coerente (data, pratica, versione)</li>
   </ul>
 
-  <h2>Esempi che non pagano</h2>
+  <h2>Flussi che di solito non pagano</h2>
   <ul>
-    <li>Layout editoriale unico ogni volta (meglio un tool interattivo)</li>
-    <li>Documenti legali dove ogni pagina va verificata a occhio senza regola</li>
+    <li>Layout editoriale unico ogni volta (meglio un tool interattivo con anteprima)</li>
+    <li>Documenti legali dove ogni pagina va verificata a occhio senza regola oggettiva</li>
     <li>“Automatizzare” un’operazione che fai due volte l’anno</li>
+    <li>PDF protetti / firmati dove ogni file ha un vincolo diverso</li>
   </ul>
+
+  <h2>Qualità vs peso: il vero trade-off</h2>
+  <p>Comprimere “al massimo” è facile da vendere e spesso inutile: se il testo diventa illeggibile o le firme scompaiono, hai solo spostato il costo a valle. Definisci un obiettivo misurabile (“sotto 5 MB, testo selezionabile, niente pagine bianche accidentali”) e ferma la compressione quando lo raggiungi.</p>
+  <p>Per lotti misti (scan + digitali), separa i percorsi: le scan tollerano JPEG aggressivo; i PDF nativi spesso no. Un unico preset su tutto è la causa numero uno di “l’automazione ha rovinato il file”.</p>
 
   <h2>Costo nascosto: la manutenzione</h2>
-  <p>Lo script che funziona oggi e si rompe al primo PDF strano ti costa più del click manuale. Meglio un tool con UI chiara (come quelli che pubblico su <a href="https://rdagmr98.github.io/autom.lab/">autom.lab</a> / PDF Magic) che un one-off fragile. Vedi anche <a href="quando-automatizzare-un-processo.html">quando automatizzare in generale</a>.</p>
+  <p>Lo script che funziona oggi e si rompe al primo PDF strano ti costa più del click manuale. Meglio un tool con UI chiara (come quelli che pubblico su <a href="https://rdagmr98.github.io/autom.lab/">autom.lab</a>) che un one-off fragile. Vedi anche <a href="quando-automatizzare-un-processo.html">quando automatizzare in generale</a> e <a href="checklist-lotto-pdf.html">checklist lotto PDF</a>.</p>
 
   <h2>Checklist prima di scrivere codice</h2>
   <ol>
-    <li>Ho misurato quanto tempo perdo al mese?</li>
-    <li>Ho tre esempi reali di input/output?</li>
-    <li>So spiegare il successo in una frase (“PDF sotto 5 MB senza rovina testo”)?</li>
-    <li>Ho un piano B se il file è protetto / scansione / font strani?</li>
+    <li>Ho misurato quanto tempo perdo al mese su questo flusso?</li>
+    <li>Ho tre esempi reali di input e l’output atteso?</li>
+    <li>So spiegare il successo in una frase?</li>
+    <li>Ho un piano B se il file è protetto, è solo scan, o ha font strani?</li>
+    <li>Chi userà lo strumento oltre a me, e capirà l’errore senza aprirmi una chat?</li>
   </ol>
+
+
+  <h2>Metriche di successo da scrivere prima</h2>
+  <p>Esempi buoni: “batch di 20 moduli uniti in pochi minuti con ordine corretto”; “allegato sempre sotto la soglia MB con testo selezionabile”. Esempi cattivi: “più veloce” senza numero; “qualità ok” senza campione di controllo. Senza metrica non sai se l’automazione ha funzionato o ha solo mosso file.</p>
 
 </article>
 <footer>

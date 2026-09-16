@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checklist per processare un lotto di PDF — rdagmr98</title>
+<meta name="description" content="Checklist operativa per comprimere, unire e controllare lotti di PDF senza rovinare testo, firme o ordine delle pagine.">
+<meta name="google-adsense-account" content="ca-pub-2556899149200560">
+<meta name="author" content="Gianmarco">
+<link rel="canonical" href="https://rdagmr98.github.io/articoli/checklist-lotto-pdf.html">
+<link rel="stylesheet" href="../site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":'Checklist per processare un lotto di PDF',"description":'Checklist operativa per comprimere, unire e controllare lotti di PDF senza rovinare testo, firme o ordine delle pagine.',"author":{"@type":"Person","name":"Gianmarco"},"dateModified":"16 settembre 2026","mainEntityOfPage":'https://rdagmr98.github.io/articoli/checklist-lotto-pdf.html'}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2556899149200560" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrap">
+<nav class="nav" aria-label="Principale">
+  <a class="brand" href="../index.html">rdagmr98</a>
+  <a href="../index.html">Home</a>
+  <a href="../index.html" aria-current="page">Articoli</a>
+  <a href="../progetti.html">Progetti</a>
+  <a href="../chi-sono.html">Chi sono</a>
+  <a href="../contatti.html">Contatti</a>
+</nav>
+<article class="prose">
+  <h1>Checklist per processare un lotto di PDF</h1>
+  <p class="meta">16 settembre 2026 · Gianmarco · Automazione</p>
+  <p class="lead">Un lotto di PDF “sembra uguale” finché il terzo file non è una scan, il quinto è protetto e il settimo ha pagine ruotate. Questa checklist evita di scoprirlo dopo aver inviato il pacchetto.</p>
+
+  <h2>Prima di toccare i file</h2>
+  <ol>
+    <li>Definisci l’obiettivo in una frase (es. “un unico PDF sotto 8 MB, testo leggibile, ordine alfabetico per cognome”).</li>
+    <li>Conta i file e annota eccezioni note (protetti, già firmati, scansioni).</li>
+    <li>Lavora su una copia della cartella, mai sull’unico originale.</li>
+    <li>Scegli naming: <code>YYYY-MM-DD_pratica_v1.pdf</code> batte <code>documento finale FINAL2.pdf</code>.</li>
+  </ol>
+
+  <h2>Durante il processamento</h2>
+  <ul>
+    <li>Separa scan e PDF nativi se usi compressione aggressiva</li>
+    <li>Unisci solo dopo aver verificato rotazione e ordine</li>
+    <li>Comprimi fino alla soglia, poi fermati</li>
+    <li>Non applicare filigrane a documenti che devono restare “puliti” per firma</li>
+  </ul>
+
+  <h2>Controllo qualità (campione obbligatorio)</h2>
+  <p>Apri almeno: il primo, uno a metà, l’ultimo, più ogni file che era un’eccezione. Verifica:</p>
+  <ul>
+    <li>Pagine tutte leggibili / non tagliate</li>
+    <li>Nessuna pagina bianca accidentale in più</li>
+    <li>Testo selezionabile dove doveva esserlo</li>
+    <li>Dimensione file entro il limite della piattaforma di destinazione</li>
+  </ul>
+
+  <h2>Quando passare da checklist ad automazione</h2>
+  <p>Se ripeti lo stesso lotto ogni settimana con le stesse regole, automatizza — vedi <a href="automazione-pdf-flussi-ripetitivi.html">flussi PDF ripetitivi</a> e <a href="quando-automatizzare-un-processo.html">quando automatizzare</a>. Se ogni lotto è un caso speciale, resta sulla checklist: è già valore, non “mancanza di codice”.</p>
+  <p>Strumenti e contesto: <a href="https://rdagmr98.github.io/autom.lab/">autom.lab</a>.</p>
+
+
+  <h2>Classificare i file in tre pile</h2>
+  <p>Prima di qualsiasi merge: (A) PDF nativi con testo, (B) scansioni, (C) protetti/firmati/eccezioni. Ogni pila ha regole diverse. Mischiarle sotto un unico preset di compressione è il modo più rapido per ottenere un allegato leggero e inutilizzabile.</p>
+  <p>Pile C: non automatizzare al primo tentativo. Apri, capisci il vincolo, documenta. Spesso la risposta corretta è “lasciare invariato” e avvisare chi riceve.</p>
+
+  <h2>Ordine operativo consigliato</h2>
+  <ol>
+    <li>Copia di lavoro + naming</li>
+    <li>Rotazione e pagine bianche</li>
+    <li>Unione per sottogruppi coerenti</li>
+    <li>Compressione fino alla soglia</li>
+    <li>QA a campione + verifica dimensione</li>
+    <li>Solo allora invio o archiviazione</li>
+  </ol>
+  <p>Invertire compressione e unione senza controllo è come cucinare e salare senza assaggiare: scopri il disastro a tavola.</p>
+
+  <h2>Criteri di fallimento espliciti</h2>
+  <ul>
+    <li>Testo non leggibile a zoom 100% su schermo laptop</li>
+    <li>Firme o timbri illeggibili</li>
+    <li>Ordine pagine diverso dall’indice concordato</li>
+    <li>File sopra il limite dopo due passaggi di compressione (allora spezza il lotto, non distruggere qualità)</li>
+  </ul>
+  <p>Se fallisce un criterio, torna indietro sulla copia di lavoro — non “provare ancora sul file già rovinato”. Contesto: <a href="automazione-pdf-flussi-ripetitivi.html">quando automatizzare i PDF</a>.</p>
+
+</article>
+<footer>
+  <a href="index.html">Tutti gli articoli</a>
+  <a href="../privacy-policy.html">Privacy</a>
+  <a href="../contatti.html">Contatti</a>
+  <p style="margin-top:.8rem">© 2026 Gianmarco — rdagmr98.github.io</p>
+</footer>
+</div>
+</body>
+</html>
